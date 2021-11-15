@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Chewy&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Itim&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Amaranth:ital,wght@0,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Slackey&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/flickity@2/dist/flickity.min.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="src/style.css" />
+    <title>Rezzta</title>
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="header-wrapper">
+          <div class="container">
+            <div class="row">
+              <div class="header">
+                <div class="header-img-w">
+                  <img src="src/img/logo.png" alt="" />
+                </div>
+                <div class="header-right-w">
+                  <div class="header-right-c">
+                    <a href="">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        id="Outline"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          d="M12,12A6,6,0,1,0,6,6,6.006,6.006,0,0,0,12,12ZM12,2A4,4,0,1,1,8,6,4,4,0,0,1,12,2Z"
+                        />
+                        <path
+                          d="M12,14a9.01,9.01,0,0,0-9,9,1,1,0,0,0,2,0,7,7,0,0,1,14,0,1,1,0,0,0,2,0A9.01,9.01,0,0,0,12,14Z"
+                        />
+                      </svg>
+                      <!-- <i class="fas fa-user"></i> -->
+                      <span> Giriş Yap </span>
+                    </a>
+                    <a href="">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        id="Outline"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          d="M23,11H21V9a1,1,0,0,0-2,0v2H17a1,1,0,0,0,0,2h2v2a1,1,0,0,0,2,0V13h2a1,1,0,0,0,0-2Z"
+                        />
+                        <path
+                          d="M9,12A6,6,0,1,0,3,6,6.006,6.006,0,0,0,9,12ZM9,2A4,4,0,1,1,5,6,4,4,0,0,1,9,2Z"
+                        />
+                        <path
+                          d="M9,14a9.01,9.01,0,0,0-9,9,1,1,0,0,0,2,0,7,7,0,0,1,14,0,1,1,0,0,0,2,0A9.01,9.01,0,0,0,9,14Z"
+                        />
+                      </svg>
+                      <!-- <i class="fas fa-user-plus"></i> -->
+                      <span> Kayıt Ol </span>
+                    </a>
+                    <a href="">
+                      <!-- <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        id="Outline"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          d="M22.713,4.077A2.993,2.993,0,0,0,20.41,3H4.242L4.2,2.649A3,3,0,0,0,1.222,0H1A1,1,0,0,0,1,2h.222a1,1,0,0,1,.993.883l1.376,11.7A5,5,0,0,0,8.557,19H19a1,1,0,0,0,0-2H8.557a3,3,0,0,1-2.82-2h11.92a5,5,0,0,0,4.921-4.113l.785-4.354A2.994,2.994,0,0,0,22.713,4.077ZM21.4,6.178l-.786,4.354A3,3,0,0,1,17.657,13H5.419L4.478,5H20.41A1,1,0,0,1,21.4,6.178Z"
+                        />
+                        <circle cx="7" cy="22" r="2" />
+                        <circle cx="17" cy="22" r="2" />
+                      </svg> -->
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        id="Outline"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          d="M21,6H18A6,6,0,0,0,6,6H3A3,3,0,0,0,0,9V19a5.006,5.006,0,0,0,5,5H19a5.006,5.006,0,0,0,5-5V9A3,3,0,0,0,21,6ZM12,2a4,4,0,0,1,4,4H8A4,4,0,0,1,12,2ZM22,19a3,3,0,0,1-3,3H5a3,3,0,0,1-3-3V9A1,1,0,0,1,3,8H6v2a1,1,0,0,0,2,0V8h8v2a1,1,0,0,0,2,0V8h3a1,1,0,0,1,1,1Z"
+                        />
+                      </svg>
+                      <!-- <i class="fas fa-shopping-basket"></i> -->
+                      <span> Sepet </span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid">
+      <div class="section2-wrapper">
+        <div class="section2-full">
+          <div class="row overflow-hidden h100">
+            <div class="col-md-8 h100">
+              <div class="row h100 w100">
+                <div class="section2-full-left h100 w100">
+                  <div class="section2-full-left-img-w h100 w100">
+                    <!-- poster="src/img/carousel1.jpg" -->
+                    <div class="video-over"></div>
+                    <video
+                      id="myVid"
+                      class="video-common video1"
+                      autoplay
+                      playsinline
+                      muted
+                    ></video>
+                  </div>
+                  <div class="arrow-w">
+                    <div class="arrow-w-1"></div>
+                    <div class="arrow-w-2"></div>
+                    <div class="arrow-w-3"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 h100">
+              <div class="row h100">
+                <div class="section2-full-right wh100">
+                  <div class="section2-full-right">
+                    <div class="section2-full-right-title">
+                      <h1>
+                        <span class="ss-1">
+                          <span class="ss-4">Lezzetler</span> Rezzta'da
+                        </span>
+                        <span class="ss-2">
+                          bir tıkla kapında <span class="ss-3">!</span>
+                        </span>
+                      </h1>
+                    </div>
+                    <div class="section2-full-right-back">
+                      <div class="back-circle"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="section2-container">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-3 offset-md-9">
+                <div class="section2-container-button-w">
+                  <a href="">
+                    <span class="map-icon-w">
+                      <!-- <svg
+                        version="1.1"
+                        id="Layer_1"
+                        xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink"
+                        x="0px"
+                        y="0px"
+                        viewBox="0 0 50 50"
+                        enable-background="new 0 0 50 50"
+                        xml:space="preserve"
+                      >
+                        <path
+                          d="M24.43,40.153c0.186,0.276,0.497,0.441,0.829,0.441h0c0.333,0,0.644-0.166,0.829-0.441l9.436-14.018
+                        c1.128-1.799,1.725-3.865,1.725-5.976c0-6.376-5.383-11.564-12-11.564s-12,5.188-12,11.564c0,2.114,0.599,4.184,1.749,6.012
+                        L24.43,40.153z M25.25,10.594c5.514,0,10,4.291,10,9.564c0,1.734-0.491,3.433-1.402,4.886l-8.59,12.76l-8.584-12.726
+                        c-0.932-1.482-1.424-3.183-1.424-4.92C15.25,14.885,19.736,10.594,25.25,10.594z"
+                        />
+                        <path
+                          d="M25.25,25.616c3.135,0,5.686-2.467,5.686-5.5s-2.55-5.5-5.686-5.5s-5.686,2.467-5.686,5.5S22.115,25.616,25.25,25.616z
+                        M25.25,16.616c2.032,0,3.686,1.57,3.686,3.5s-1.653,3.5-3.686,3.5s-3.686-1.57-3.686-3.5S23.218,16.616,25.25,16.616z"
+                        />
+                      </svg> -->
+                      <svg
+                        version="1.1"
+                        id="Capa_1"
+                        xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink"
+                        x="0px"
+                        y="0px"
+                        viewBox="0 0 512 512"
+                        style="enable-background: new 0 0 512 512"
+                        xml:space="preserve"
+                      >
+                        <path
+                          class="st0"
+                          d="M256,61.53c-76.57,0-138.64,62.07-138.64,138.64S256,450.47,256,450.47s138.64-173.73,138.64-250.3
+                        S332.57,61.53,256,61.53z M256,264.25c-38.82,0-70.28-31.47-70.28-70.28c0-38.82,31.47-70.28,70.28-70.28s70.28,31.47,70.28,70.28
+                        C326.28,232.79,294.82,264.25,256,264.25z"
+                        />
+                      </svg>
+                      <small class="map-icon-wrapper"> </small>
+                    </span>
+                    <span class="map-txt"> Konum Bul </span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="home-slider-bottom-wrapper">
+      <div class="container">
+        <div class="row">
+          <div style="width: 100%">
+            <div class="main-carousel">
+              <div class="carousel-cell">
+                <div class="home-carousel-wrapper">
+                  <img src="src/img/carousel1.jpg" class="img-back" alt="" />
+                  <div class="img-border">
+                    <img src="src/img/carousel1.jpg" alt="" />
+                  </div>
+                  <div class="description-wrapper">
+                    <span class="title"> Yemekler </span>
+                    <span class="price"> 9,99TL </span>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-cell">
+                <div class="home-carousel-wrapper">
+                  <img src="src/img/carousel2.jpg" class="img-back" alt="" />
+                  <div class="img-border">
+                    <img src="src/img/carousel2.jpg" alt="" />
+                  </div>
+                  <div class="description-wrapper">
+                    <span class="title"> Yemekler </span>
+                    <span class="price"> 9,99TL </span>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-cell">
+                <div class="home-carousel-wrapper">
+                  <img src="src/img/carousel3.jpg" class="img-back" alt="" />
+                  <div class="img-border">
+                    <img src="src/img/carousel3.jpg" alt="" />
+                  </div>
+                  <div class="description-wrapper">
+                    <span class="title"> Yemekler </span>
+                    <span class="price"> 9,99TL </span>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-cell">
+                <div class="home-carousel-wrapper">
+                  <img src="src/img/carousel4.jpg" class="img-back" alt="" />
+                  <div class="img-border">
+                    <img src="src/img/carousel4.jpg" alt="" />
+                  </div>
+                  <div class="description-wrapper">
+                    <span class="title"> Yemekler </span>
+                    <span class="price"> 9,99TL </span>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-cell">
+                <div class="home-carousel-wrapper">
+                  <img src="src/img/carousel1.jpg" class="img-back" alt="" />
+                  <div class="img-border">
+                    <img src="src/img/carousel1.jpg" alt="" />
+                  </div>
+                  <div class="description-wrapper">
+                    <span class="title"> Yemekler </span>
+                    <span class="price"> 9,99TL </span>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-cell">
+                <div class="home-carousel-wrapper">
+                  <img src="src/img/carousel2.jpg" class="img-back" alt="" />
+                  <div class="img-border">
+                    <img src="src/img/carousel2.jpg" alt="" />
+                  </div>
+                  <div class="description-wrapper">
+                    <span class="title"> Yemekler </span>
+                    <span class="price"> 9,99TL </span>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-cell">
+                <div class="home-carousel-wrapper">
+                  <img src="src/img/carousel3.jpg" class="img-back" alt="" />
+                  <div class="img-border">
+                    <img src="src/img/carousel3.jpg" alt="" />
+                  </div>
+                  <div class="description-wrapper">
+                    <span class="title"> Yemekler </span>
+                    <span class="price"> 9,99TL </span>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-cell">
+                <div class="home-carousel-wrapper">
+                  <img src="src/img/carousel4.jpg" class="img-back" alt="" />
+                  <div class="img-border">
+                    <img src="src/img/carousel4.jpg" alt="" />
+                  </div>
+                  <div class="description-wrapper">
+                    <span class="title"> Yemekler </span>
+                    <span class="price"> 9,99TL </span>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-cell">
+                <div class="home-carousel-wrapper">
+                  <img src="src/img/carousel1.jpg" class="img-back" alt="" />
+                  <div class="img-border">
+                    <img src="src/img/carousel1.jpg" alt="" />
+                  </div>
+                  <div class="description-wrapper">
+                    <span class="title"> Yemekler </span>
+                    <span class="price"> 9,99TL </span>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-cell">
+                <div class="home-carousel-wrapper">
+                  <img src="src/img/carousel2.jpg" class="img-back" alt="" />
+                  <div class="img-border">
+                    <img src="src/img/carousel2.jpg" alt="" />
+                  </div>
+                  <div class="description-wrapper">
+                    <span class="title"> Yemekler </span>
+                    <span class="price"> 9,99TL </span>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-cell">
+                <div class="home-carousel-wrapper">
+                  <img src="src/img/carousel3.jpg" class="img-back" alt="" />
+                  <div class="img-border">
+                    <img src="src/img/carousel3.jpg" alt="" />
+                  </div>
+                  <div class="description-wrapper">
+                    <span class="title"> Yemekler </span>
+                    <span class="price"> 9,99TL </span>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-cell">
+                <div class="home-carousel-wrapper">
+                  <img src="src/img/carousel4.jpg" class="img-back" alt="" />
+                  <div class="img-border">
+                    <img src="src/img/carousel4.jpg" alt="" />
+                  </div>
+                  <div class="description-wrapper">
+                    <span class="title"> Yemekler </span>
+                    <span class="price"> 9,99TL </span>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-cell">
+                <div class="home-carousel-wrapper">
+                  <img src="src/img/carousel1.jpg" class="img-back" alt="" />
+                  <div class="img-border">
+                    <img src="src/img/carousel1.jpg" alt="" />
+                  </div>
+                  <div class="description-wrapper">
+                    <span class="title"> Yemekler </span>
+                    <span class="price"> 9,99TL </span>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-cell">
+                <div class="home-carousel-wrapper">
+                  <img src="src/img/carousel2.jpg" class="img-back" alt="" />
+                  <div class="img-border">
+                    <img src="src/img/carousel2.jpg" alt="" />
+                  </div>
+                  <div class="description-wrapper">
+                    <span class="title"> Yemekler </span>
+                    <span class="price"> 9,99TL </span>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-cell">
+                <div class="home-carousel-wrapper">
+                  <img src="src/img/carousel3.jpg" class="img-back" alt="" />
+                  <div class="img-border">
+                    <img src="src/img/carousel3.jpg" alt="" />
+                  </div>
+                  <div class="description-wrapper">
+                    <span class="title"> Yemekler </span>
+                    <span class="price"> 9,99TL </span>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-cell">
+                <div class="home-carousel-wrapper">
+                  <img src="src/img/carousel4.jpg" class="img-back" alt="" />
+                  <div class="img-border">
+                    <img src="src/img/carousel4.jpg" alt="" />
+                  </div>
+                  <div class="description-wrapper">
+                    <span class="title"> Yemekler </span>
+                    <span class="price"> 9,99TL </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://kit.fontawesome.com/10f1571eb5.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+    <script src="src/custom.js"></script>
+  </body>
+</html>
